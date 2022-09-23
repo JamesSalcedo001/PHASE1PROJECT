@@ -1,0 +1,13 @@
+h1 {
+    color: lightblue;
+    text-align: center;
+}
+
+body {
+    border-style: 300px black;
+    background-color: rgba(172, 0, 0, 0.883);
+}
+
+div#bottomSection {
+    height: "200px"
+}
