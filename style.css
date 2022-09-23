@@ -1,13 +1,48 @@
 h1 {
-    color: lightblue;
+    background-color: rgb(0, 106, 255);
+    color:silver;
     text-align: center;
+    border: 10px ;
+    border-style: inset;
+    border-radius: 10px;
+    margin-right: 1000px;
 }
 
 body {
-    border-style: 300px black;
-    background-color: rgba(172, 0, 0, 0.883);
+    background-color: rgb(0, 0, 145);
 }
 
-div#bottomSection {
-    height: "200px"
+p#Names {
+    background-color: silver;
+    color: rgb(0, 19, 114);
+    margin-left: 1000px;
+    text-align:center;
+    border: 5px;
+    border-style:outset;
 }
+
+li {
+    text-align:center;
+    margin-left: 1000px;
+    color:rgb(17, 0, 146);
+    background-color: silver;
+    border: 8px white;
+    border-style:outset;
+    border-radius: 10px;
+}
+
+div#bottom {
+    margin-block: 80px;
+    border-width: 5px;
+    background-color: rgb(6, 55, 129);
+    border-color: black;
+    border-style: inset;
+}
+
+
+span#bottomText2 {
+    float: right;
+}
+
+
+
