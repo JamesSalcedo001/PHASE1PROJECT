@@ -11,7 +11,7 @@ body {
 
 .pCard {
     margin: 80px;
-    border: solid;
+    border: solid 5px;
     border-radius: 20px;
     border-color:darkblue;
     width:auto;
@@ -28,7 +28,9 @@ body {
     width:200px;
 }
 
+
 .pCard:hover {
+    background-color: white;
     box-shadow: 0 10px 80px 0 rgba(170, 1, 1, 0.886)
 }
 
@@ -43,6 +45,7 @@ body {
 }
 
 #darkMode:hover {
+    background-color: white;
     box-shadow: 0 50px 30px 0 hwb(298 2% 0% / 0.923);
     width: auto;
     height: auto;

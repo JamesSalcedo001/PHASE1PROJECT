@@ -1,14 +1,30 @@
 const pokeBox = document.getElementById("pokeBox")
 
-const pokeNum = 25;
+// document.addEventListener("DOMContentLoaded", pokeLoop);
 
 
 
 function pokeLoop() {
+  let pokeNum = 25;
   for(let i = 1; i < pokeNum; i++) {
     catchPokemon(i)
+    document.addEventListener("keydown", (e) => {
+      if (e.defaultPrevented) {
+        return;
+      }
+      switch (e.key) {
+        case "Enter": catchPokemon(i=i+25);
+        replaceChildren();
+        break; 
+        default:
+          return;
+      }
+      e.preventDefault();
+    }, true);
   }
 }
+
+pokeLoop()
 
 function catchPokemon(id) {
   fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
@@ -17,7 +33,7 @@ function catchPokemon(id) {
 }
 
 
-pokeLoop();
+
 
 function renderPokemon(pokemon) {
   const pCard = document.createElement("div")
@@ -40,8 +56,28 @@ function renderPokemon(pokemon) {
 function darkMode() {
   let elem = document.body;
   elem.classList.toggle("darkTheme");
+
+  if (darkButton.textContent === "DAZZLING GLEAM") {
+    darkButton.textContent = "DARK PULSE"
+  } else {
+    darkButton.innerText = "DAZZLING GLEAM"
+  }
 }
 
 let darkButton = document.getElementById("darkMode")
 
 darkButton.addEventListener("click", darkMode)
+
+
+// document.addEventListener("keydown", (e) => {
+//   if (e.defaultPrevented) {
+//     return;
+//   }
+//   switch (e.key) {
+//     case "Enter": ;
+//     break; 
+//     default:
+//       return;
+//   }
+//   e.preventDefault();
+// }, true);
