@@ -1,16 +1,39 @@
-const pokemonNumber = 151;
+const pokeBox = document.getElementById("pokeBox")
 
-let dexData = {};
+const pokeNum = 25;
 
-let DOMLoad = document.addEventListener("DOMContentLoaded", (event) => {
-  pokemonCatcher(1);
-});
 
-function pokemonCatcher(number) {
-  let catcher = "https://pokeapi.co/api/v2/pokemon/" + number.toString();
-  fetch(catcher)
-  .then((res) => res.json())
-  .then((data) => console.log(data))
+
+function pokeLoop() {
+  for(let i = 1; i < pokeNum; i++) {
+    catchPokemon(i)
+  }
 }
 
-pokemonCatcher();
+function catchPokemon(id) {
+  fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+  .then(resp => resp.json())
+  .then(pokemon => renderPokemon(pokemon))
+}
+
+
+pokeLoop();
+
+function renderPokemon(pokemon) {
+  const pCard = document.createElement("div")
+  const name = document.createElement("h2")
+  const img = document.createElement("img")
+
+  pCard.className = "pCard"
+
+  name.textContent = pokemon.name.toUpperCase();
+
+  img.src = pokemon.sprites.front_default
+  img.className = "pokeImg"
+
+  pCard.append(name, img)
+  pokeBox.append(pCard)
+
+}
+
+
