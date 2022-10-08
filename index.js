@@ -37,3 +37,11 @@ function renderPokemon(pokemon) {
 }
 
 
+function darkMode() {
+  let elem = document.body;
+  elem.classList.toggle("darkTheme");
+}
+
+let darkButton = document.getElementById("darkMode")
+
+darkButton.addEventListener("click", darkMode)
