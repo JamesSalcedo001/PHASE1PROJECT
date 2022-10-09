@@ -2,6 +2,24 @@ body {
     background-color: snow;
 }
 
+#myTitle {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size:larger;
+    border: solid 1px;
+    background-color: rgb(9, 6, 171);
+    color: white;
+    border-radius: 30px;
+    border-color: rgb(32, 217, 246);
+    transition: 0.6s;
+    box-shadow: 3px 1px 6px 4px hwb(187 2% 0% / 0.923);
+}
+
+#myTitle:hover {
+    background-color: white;
+    box-shadow: 0 50px 30px 0 hwb(187 2% 0% / 0.923);
+}
 
 .darkTheme {
     background-color: black;
@@ -23,18 +41,29 @@ body {
     transition: 0.6s;
 }
 
+.type1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+
 .pokeImg {
-    height:200px;
-    width:200px;
+    height:180px;
+    width:180px;
 }
 
 
 .pCard:hover {
+    transform: translate(10px, -10px);
     background-color: white;
-    box-shadow: 0 10px 80px 0 rgba(170, 1, 1, 0.886)
+    box-shadow: 10px 10px 80px 20px rgba(170, 1, 1, 0.886)
 }
 
 #darkMode {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size:larger;
     border: solid 1px;
     background-color: black;
     color: violet;
@@ -42,11 +71,12 @@ body {
     float: right;
     border-color: violet;
     transition: 0.6s;
+    box-shadow: 3px 1px 6px 4px hwb(298 2% 0% / 0.923);
+
 }
 
 #darkMode:hover {
+    transform: translate(10px, -10px);
     background-color: white;
     box-shadow: 0 50px 30px 0 hwb(298 2% 0% / 0.923);
-    width: auto;
-    height: auto;
 }
