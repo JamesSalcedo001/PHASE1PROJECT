@@ -24,4 +24,3 @@ fetches another 25 items and renders them as cards, while replacing the previous
 # click event with a dark mode toggle button
 when the dark mode button is clicked, it changes the document body color to black and some text light blue
 ```
-
