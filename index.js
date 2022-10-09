@@ -2,6 +2,9 @@ const pokeBox = document.getElementById("pokeBox")
 
 document.addEventListener("DOMContentLoaded", pokeLoop)
 
+let adder = 0
+
+
 
 function pokeLoop() {
   let pokeNum = 25;
@@ -13,13 +16,14 @@ function pokeLoop() {
         return;
       }
       switch (e.key) {
-        case "Enter": catchPokemon(i=i+25);
+        case "Enter": catchPokemon(i=i+23);
         pokeBox.replaceChildren();
-        let pokeNum = 50
-        for(let i = 26; i < pokeNum; i++) {
+        let pokeNum = 50 + adder
+        for(let i = 26 + adder; i < pokeNum; i++) {
           catchPokemon(i)
         }
-        break; 
+        adder = adder + 24
+        break;
         default:
           return;
       }
@@ -27,7 +31,6 @@ function pokeLoop() {
     }, true);
   }
 }
-// pokeLoop();
 
 
 function catchPokemon(id) {
@@ -50,6 +53,10 @@ function renderPokemon(pokemon) {
   type1.className = "type1"
   type1.textContent = pokemon.types["0"].type.name.toUpperCase();
   name.textContent = pokemon.name.toUpperCase();
+
+  pCard.addEventListener("click", function() {
+    pCard.remove();
+  })
 
   img.src = pokemon.sprites.versions["generation-vii"]["ultra-sun-ultra-moon"]["front_default"];
   img.className = "pokeImg"
@@ -79,7 +86,7 @@ darkButton.addEventListener("click", darkMode)
 
 
 
-"added more css effects to dark mode button with a hover effect moving the button when it's hovered over. added css to title, J.S. POKEDEX, similar hover effect but different color. added some more css to cards to make them move when hovered over, and changed the images to a different type, as well as added another attribute (pokemon type). managed to get the javascript keydown event handler to loop through another set of 25 items, as well as remove the previous ones from the page, however it still has some issues where the cards don't display evenly and it won't retrieve an additional 25 pokemon it just keeps it at the second set. "
+
 
 
 
