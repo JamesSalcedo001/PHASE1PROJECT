@@ -52,25 +52,32 @@ function renderPokemon(pokemon) {
   const name = document.createElement("h2")
   const img = document.createElement("img")
   const type1 = document.createElement("h5")
+  const btn = document.createElement("button")
+  const num = document.createElement("h5")
 
   pCard.className = "pCard"
   type1.innerText = pokemon.types["0"].type.name
   type1.className = "type1"
   type1.textContent = pokemon.types["0"].type.name.toUpperCase();
   name.textContent = pokemon.name.toUpperCase();
+  btn.textContent = "♥";
+  btn.className = "btn"
+  num.textContent = "Likes: 0"
+  btn.addEventListener("click", () => nextLike(pokemon, num))
 
-  pCard.addEventListener("click", function() {
-    pCard.remove();
-  })
-
+  // pCard.addEventListener("click", function() {
+  //   pCard.remove();
+  // })
 
   img.src = pokemon.sprites.versions["generation-vii"]["ultra-sun-ultra-moon"]["front_default"];
   img.className = "pokeImg"
 
-  pCard.append(name, img, type1)
+  pCard.append(name, img, type1, btn, num)
   pokeBox.append(pCard)
 
 }
+
+
 
 
 function darkMode() {
