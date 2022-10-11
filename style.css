@@ -1,6 +1,26 @@
 body {
     background-color: snow;
+
 }
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#pokeball {
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    top: 1860px;
+    left: 185px;
+    z-index: -1;
+}
+
 
 #myTitle {
     text-align: center;
@@ -28,6 +48,9 @@ body {
 
 
 .pCard {
+    animation: fade 1s ease-in 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     margin: 80px;
     border: solid 5px;
     border-radius: 20px;
@@ -38,7 +61,7 @@ body {
     box-shadow: 0 50px 30px 0 hwb(198 2% 0% / 0.923);
     float: left;
     text-align: center;
-    transition: 0.6s;
+    transition: 0.3s;
 }
 
 .type1 {
@@ -80,3 +103,6 @@ body {
     background-color: white;
     box-shadow: 0 50px 30px 0 hwb(298 2% 0% / 0.923);
 }
+
+
+

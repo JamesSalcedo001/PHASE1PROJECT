@@ -2,6 +2,10 @@ const pokeBox = document.getElementById("pokeBox")
 
 document.addEventListener("DOMContentLoaded", pokeLoop)
 
+
+
+
+
 let adder = 0
 
 
@@ -16,10 +20,10 @@ function pokeLoop() {
         return;
       }
       switch (e.key) {
-        case "Enter": catchPokemon(i=i+23);
+        case "Enter": catchPokemon(i=i+24);
         pokeBox.replaceChildren();
         let pokeNum = 50 + adder
-        for(let i = 26 + adder; i < pokeNum; i++) {
+        for(let i = 27 + adder; i < pokeNum; i++) {
           catchPokemon(i)
         }
         adder = adder + 24
@@ -58,6 +62,7 @@ function renderPokemon(pokemon) {
     pCard.remove();
   })
 
+
   img.src = pokemon.sprites.versions["generation-vii"]["ultra-sun-ultra-moon"]["front_default"];
   img.className = "pokeImg"
 
@@ -82,39 +87,3 @@ let darkButton = document.getElementById("darkMode")
 
 darkButton.addEventListener("click", darkMode)
 
-
-
-
-
-
-
-
-
-
-
-// THIS WORKS TO ADD NEW POKEMON TO THE PAGE HOWEVER IT IS BUGGY
-
-// function pokeLoop() {
-//   let pokeNum = 25;
-//   for(let i = 1; i < pokeNum; i++) {
-    
-//     catchPokemon(i)
-//     document.addEventListener("keydown", (e) => {
-//       if (e.defaultPrevented) {
-//         return;
-//       }
-//       switch (e.key) {
-//         case "Enter": catchPokemon(i=i+25);
-//         pokeBox.replaceChildren();
-//         let pokeNum = 50
-//         for(let i = 26; i < pokeNum; i++) {
-//           catchPokemon(i)
-//         }
-//         break; 
-//         default:
-//           return;
-//       }
-//       e.preventDefault();
-//     }, true);
-//   }
-// }
