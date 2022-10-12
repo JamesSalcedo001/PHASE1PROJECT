@@ -63,7 +63,7 @@ function renderPokemon(pokemon) {
   btn.textContent = "♥";
   btn.className = "btn"
   num.textContent = "0"
-  btn.addEventListener("click", function() {
+  btn.addEventListener("mouseover", function() {
     ++num.innerText;
   })
 
