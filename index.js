@@ -67,9 +67,6 @@ function renderPokemon(pokemon) {
     ++num.innerText;
   })
 
-  // pCard.addEventListener("click", function() {
-  //   pCard.remove();
-  // })
 
   img.src = pokemon.sprites.versions["generation-vii"]["ultra-sun-ultra-moon"]["front_default"];
   img.className = "pokeImg"
