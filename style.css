@@ -61,6 +61,8 @@ body {
 .btn:hover {
     background-color: blue;
     color:white;
+    transform: translate(0px, -3px);
+    box-shadow: 0 18px 0px 0 hwb(238 2% 25% / 0.923);
 
 }
 
