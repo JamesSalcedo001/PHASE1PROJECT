@@ -62,8 +62,10 @@ function renderPokemon(pokemon) {
   name.textContent = pokemon.name.toUpperCase();
   btn.textContent = "♥";
   btn.className = "btn"
-  num.textContent = "Likes: 0"
-  btn.addEventListener("click", () => nextLike(pokemon, num))
+  num.textContent = "0"
+  btn.addEventListener("click", function() {
+    ++num.innerText;
+  })
 
   // pCard.addEventListener("click", function() {
   //   pCard.remove();
@@ -76,8 +78,6 @@ function renderPokemon(pokemon) {
   pokeBox.append(pCard)
 
 }
-
-
 
 
 function darkMode() {
