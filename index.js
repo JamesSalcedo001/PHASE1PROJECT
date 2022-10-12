@@ -41,7 +41,7 @@ function catchPokemon(id) {
   fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
   .then(resp => resp.json())
   .then(pokemon => renderPokemon(pokemon))
-  .catch(error => console.log(`Your Error is:  ${error}`))
+  .catch(error => alert(`Your Error is:  ${error}`))
 }
 
 
