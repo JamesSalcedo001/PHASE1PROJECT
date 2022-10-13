@@ -76,10 +76,10 @@ body {
     border: solid 0.313rem;
     border-radius: 1.25rem;
     border-color:darkblue;
-    width:14%;
-    height:14%;
+    width:12rem;
+    height:22rem;
     padding: 3.125rem;
-    box-shadow: 0 50px 30px 0 hwb(198 2% 0% / 0.923);
+    box-shadow: 0 3.125rem 1.875rem 0 hwb(198 2% 0% / 0.923);
     float: left;
     text-align: center;
     transition: 0.3s;
@@ -93,8 +93,8 @@ body {
 
 
 .pokeImg {
-    height:180px;
-    width:180px;
+    height:11.25rem;
+    width:11.25rem;
 }
 
 .pokeImg:hover {
@@ -106,7 +106,7 @@ body {
 .pCard:hover {
     transform: translate(10px, -10px);
     background-color: white;
-    box-shadow: 10px 10px 80px 20px rgba(170, 1, 1, 0.886)
+    box-shadow: 0.625rem 0.625rem 5rem 1.25rem rgba(170, 1, 1, 0.886)
 }
 
 
