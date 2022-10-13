@@ -16,31 +16,31 @@ body {
     animation-fill-mode: forwards;
     opacity: 0;
     position: absolute;
-    height: 1000px;
-    width: 1000px;
-    top: 1860px;
-    left: 185px;
+    height: 62.5rem;
+    width: 62.5rem;
+    top: 126rem;
+    left: 13rem;
     z-index: -1;
 }
 
 
 #myTitle {
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     font-size:larger;
-    border: solid 3px;
+    border: solid 0.188rem;
     background-color: rgb(9, 6, 171);
     color: white;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border-color: rgb(32, 217, 246);
     transition: 0.6s;
-    box-shadow: 3px 1px 6px 4px hwb(187 2% 0% / 0.923);
+    box-shadow: 0.188rem 0.063rem 0.375rem 0.25rem hwb(187 2% 0% / 0.923);
 }
 
 #myTitle:hover {
     background-color: white;
-    box-shadow: 0 50px 30px 0 hwb(187 2% 0% / 0.923);
+    box-shadow: 0 3.125rem 1.875rem 0 hwb(187 2% 0% / 0.923);
 }
 
 
@@ -54,15 +54,15 @@ body {
     transition-duration: 0.4s;
     background-color: white;
     color: red;
-    border: 2px solid blue;
-    border-radius: 6px;    
+    border: 0.125rem solid blue;
+    border-radius: 0.375rem;    
 }
 
 .btn:hover {
     background-color: blue;
     color:white;
-    transform: translate(0px, -3px);
-    box-shadow: 0 18px 0px 0 hwb(238 2% 25% / 0.923);
+    transform: translate(0rem, -0.188rem);
+    box-shadow: 0 1.125rem 0rem 0 hwb(238 2% 25% / 0.923);
 
 }
 
@@ -71,7 +71,6 @@ body {
     animation: fade 1s ease-in 0.2s;
     animation-fill-mode: forwards;
     opacity: 0;
-    /* margin: 80px; */
     margin:5em;
     border: solid 0.313rem;
     border-radius: 1.25rem;
@@ -86,8 +85,8 @@ body {
 }
 
 .type1 {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     text-align: center;
 }
 
@@ -104,7 +103,7 @@ body {
 
 
 .pCard:hover {
-    transform: translate(10px, -10px);
+    transform: translate(0.625rem, -0.625rem);
     background-color: white;
     box-shadow: 0.625rem 0.625rem 5rem 1.25rem rgba(170, 1, 1, 0.886)
 }
@@ -112,39 +111,39 @@ body {
 
 @keyframes bounce {
     20% {
-      transform: translateY(-30px);
+      transform: translateY(-1.875rem);
     }
     40% {
-      transform: translateY(0px);
+      transform: translateY(0rem);
     }
     60% {
-      transform: translateY(-10px);
+      transform: translateY(-0.625rem);
     }
     80% {
-      transform: translateY(-15px);
+      transform: translateY(-0.938rem);
     }
   }
 
 
 #darkMode {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     font-size:larger;
-    border: solid 1px;
+    border: solid 0.063rem;
     background-color: black;
     color: violet;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     float: right;
     border-color: violet;
     transition: 0.6s;
-    box-shadow: 3px 1px 6px 4px hwb(298 2% 0% / 0.923);
+    box-shadow: 0.188rem 0.063rem 0.375rem 0.25rem hwb(298 2% 0% / 0.923);
 
 }
 
 #darkMode:hover {
-    transform: translate(10px, -10px);
+    transform: translate(0.625rem, -0.625rem);
     background-color: white;
-    box-shadow: 0 50px 30px 0 hwb(298 2% 0% / 0.923);
+    box-shadow: 0 3.125rem 1.875rem 0 hwb(298 2% 0% / 0.923);
 }
 
 
