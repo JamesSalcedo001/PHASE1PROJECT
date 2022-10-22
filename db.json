@@ -1,0 +1,94 @@
+{
+    "pokemon": [
+        {
+            "name": "Bulbasaur",
+            "image": "./images/250px-001Bulbasaur.webp",
+            "type": "Grass",
+            "likeNum": 0
+        },
+        {
+            "name": "Ivysaur",
+            "image": "./images/250px-002Ivysaur.webp",
+            "type": "Grass",
+            "likeNum": 0
+        },
+        {
+            "name": "Venusaur",
+            "image": "./images/250px-003Venusaur.webp",
+            "type": "Grass",
+            "likeNum": 0
+        },
+        {
+            "name": "Charmander",
+            "image": "./images/250px-004Charmander.webp",
+            "type": "Fire",
+            "likeNum": 0
+        },
+        {
+            "name": "Charmeleon",
+            "image": "./images/250px-005Charmeleon.webp",
+            "type": "Fire",
+            "likeNum": 0
+        },
+        {
+            "name": "Charizard",
+            "image": "./images/250px-006Charizard.webp",
+            "type": "Fire",
+            "likeNum": 0
+        },
+        {
+            "name": "Squirtle",
+            "image": "./images/250px-007Squirtle.webp",
+            "type": "Water",
+            "likeNum": 0
+        },
+        {
+            "name": "Wartortle",
+            "image": "./images/250px-008Wartortle.webp",
+            "type": "Water",
+            "likeNum": 0
+        },
+        {
+            "name": "Blastoise",
+            "image": "./images/250px-009Blastoise.webp",
+            "type": "Water",
+            "likeNum": 0
+        },
+        {
+            "name": "Caterpie",
+            "image": "./images/250px-010Caterpie.webp",
+            "type": "Bug",
+            "likeNum": 0
+        },
+        {
+            "name": "Metapod",
+            "image": "./images/250px-011Metapod.webp",
+            "type": "Bug",
+            "likeNum": 0
+        },
+        {
+            "name": "Butterfree",
+            "image": "./images/250px-012Butterfree.webp",
+            "type": "Bug",
+            "likeNum": 0
+        },
+        {
+            "name": "Weedle",
+            "image": "./images/250px-013Weedle.webp",
+            "type": "Bug",
+            "likeNum": 0
+        },
+        {
+            "name": "Kakuna",
+            "image": "./images/250px-014Kakuna.webp",
+            "type": "Bug",
+            "likeNum": 0
+        },
+        {
+            "name": "Beedrill",
+            "image": "./images/250px-015Beedrill.webp",
+            "type": "Bug",
+            "likeNum": 0
+        }
+    ]
+}

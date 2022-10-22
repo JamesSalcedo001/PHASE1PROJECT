@@ -24,6 +24,7 @@ body {
 }
 
 
+
 #myTitle {
     text-align: center;
     padding-left: 0.625rem;
@@ -51,6 +52,7 @@ body {
 }
 
 .btn {
+    font-size: 0.8rem;
     transition-duration: 0.4s;
     background-color: white;
     color: red;
@@ -65,7 +67,6 @@ body {
     box-shadow: 0 1.125rem 0rem 0 hwb(238 2% 25% / 0.923);
 
 }
-
 
 .pCard {
     animation: fade 1s ease-in 0.2s;
@@ -85,6 +86,7 @@ body {
 }
 
 .type1 {
+    font-size: 1rem;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
     text-align: center;
@@ -92,8 +94,8 @@ body {
 
 
 .pokeImg {
-    height:11.25rem;
-    width:11.25rem;
+    height:12rem;
+    width:12rem;
 }
 
 .pokeImg:hover {
