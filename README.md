@@ -16,11 +16,11 @@ In order to work with this project, I had to have HomeBrew installed, as well as
 ## Usage
 
 ```python
-# DOMContentLoaded renders 24 Pokemon Cards to the page
-Page Loads => First 24 Pokemon onscreen!
+# DOMContentLoaded renders 15 Pokemon Cards to the page
+Page Loads => 15 Pokemon onscreen!
 
-# Press the Enter Key for more Pokemon!
-"Enter" => Next 24 Pokemon onscreen!
+# Hover the mouse over the button to like the pokemon!
+=> hover over => liked!
 
 # Click the Dark Pulse button for a Dark Theme!
 
