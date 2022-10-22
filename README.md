@@ -1,6 +1,6 @@
 # Pokedex!
 
-This is my version of a Pokedex! I used my knowledge of JS, HTML, and CSS to create a different take on the traditional Pokedex, and made in similar to the Pokemon cards everyone loves! Starting with the original pokemon, the page begins with 24 cards, and with each time the enter key is pressed, the next sequential set of 24 cards is rendered to the page, looping through all of the hundreds of Pokemon generations later! To make it even more fun, I added a like button, which you can like by hovering over it, Pokemon that hop up and down when you hover over them, and a dark theme button to click when you want to change things up a bit! 
+This is my version of a Pokedex! I used my knowledge of JS, HTML, and CSS to create a different take on the traditional Pokedex, and made in similar to the Pokemon cards everyone loves! Showcasing some of the original pokemon, the page loads 15 cards. To make it more fun, I added a like button, which you can like by hovering over it, Pokemon that hop up and down when you hover over them, and a dark theme button to click when you want to change things up a bit! 
 
 
 ## Installation
