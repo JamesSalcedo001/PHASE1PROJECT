@@ -1,3 +1,4 @@
+
 # Pokedex!
 
 This is my version of a Pokedex! I used my knowledge of JS, HTML, and CSS to create a different take on the traditional Pokedex, and made in similar to the Pokemon cards everyone loves! Showcasing some of the original pokemon, the page loads 15 cards. To make it more fun, I added a like button, which you can like by hovering over it, Pokemon that hop up and down when you hover over them, and a dark theme button to click when you want to change things up a bit! 
@@ -32,11 +33,8 @@ click button twice => back to light theme!
 
 
 ## Images
-![Screen Shot 2022-10-13 at 6 20 19 PM](https://user-images.githubusercontent.com/107723341/195729001-5c15e158-a70a-41cb-baca-01c14234f5ca.png)
 
-
-![Screen Shot 2022-10-13 at 6 20 59 PM](https://user-images.githubusercontent.com/107723341/195729011-e3fddbbf-ba52-42a4-9606-9df633589553.png)
-
+![Screen Shot 2022-10-25 at 3 07 25 PM](https://user-images.githubusercontent.com/107723341/197871524-d395d26c-e43b-4479-a733-a79df12a0cfb.png)
 
 
 ## Contributing
